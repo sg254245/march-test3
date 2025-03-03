@@ -1,5 +1,5 @@
 /* Tablet & Mobile View */
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 980px) {
     /* Center Logo and Increase Size */
     .logo {
         display: flex;
