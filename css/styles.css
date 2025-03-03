@@ -1,0 +1,326 @@
+/* Cleans up overall website spacing issues */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #EFE6DE;
+    font-family: Arial, sans-serif;
+}
+
+/* Header (Desktop) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF2F2;
+    padding: 20px;
+    position: relative;
+    z-index: 1000; /* Keeps header above other content */
+}
+
+/* Logo (Default - Desktop) */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 240px;
+    height: 90px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #34160E;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hide the checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none; /* Hidden by default (will be shown in mobile view) */
+    font-size: 40px;
+    cursor: pointer;
+    color: #34160E;
+    text-align: center;
+}
+
+/* Navigation Menu (Desktop) */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: none;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+/* Hero Image Section */
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 3000px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Button Styling */
+.button-link {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #d3a9e5;
+    color: #402620;
+    padding: 15px 45px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: #A474BF;
+}
+
+/* Section Titles */
+.section-title {
+    color: #996eb2ea;
+    text-align: center;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3.5em;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+/* Mission Text */
+.mission-text {
+    margin: 30px;
+    color: #421b11;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 150px 0px 150px;
+}
+
+/* Grid Layout for Cupcakes and Cookies */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for desktop */
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+
+/* Box Styling */
+.box {
+    width: 300px;
+    background: #faeedfd9;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+    width: 100%;
+    border-radius: 8px;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the area without distortion */
+}
+
+.box h1 {
+    padding-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #34160E;
+    margin: 10px 0;
+}
+
+.box a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #402620;
+    background-color: #C793E3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.box a:hover {
+    background-color: #A474BF;
+}
+
+/* DONATE PAGE */
+
+/* Section: Why You Should Donate */
+.donate-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.donate-text h1 {
+padding-bottom: 20px;
+}
+
+.donate-text {
+    flex: 1;
+    color: #34160E;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.donate-text a {
+    color: #996EB2EA;
+    font-weight: bold;
+}
+
+.cmmhc-logo {
+    width: 400px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+/* Section: What The Donations Do */
+.donation-list {
+    background: #F4F4F4;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.donation-list h1 {
+    color: #996EB2EA;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 350%;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.donation-list ul {
+    color: #34160E;
+    font-size: 18px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Section: Suicide Facts */
+.suicide-section {
+    display: flex;
+    gap: 20px;
+    padding: 30px 30px 80px 30px;
+    align-items: center;
+}
+
+.suicide-text h1 {
+    padding-bottom: 20px;
+    }
+
+.suicide-text {
+    flex: 2;
+    color: #34160E;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.video-frame {
+    flex: 1;
+    width: 450px;
+    height: 250px;
+    border: none;
+}
+
+
+/* ORDER PAGE */
+
+/* Order Page Layout */
+.order-page-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left and Right Box */
+.left-box, .right-box {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Styling for the Form */
+.left-box iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+/* Styling for the Table */
+.right-box table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FCFAF8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right-box th, .right-box td {
+    border: 1px solid #34160E;
+    padding: 10px;
+}
+
+/* Image Styling */
+.order-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFF2F2;
+    text-align: center;
+    padding: 20px;
+}
