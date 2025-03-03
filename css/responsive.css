@@ -76,7 +76,7 @@
 }
 
 /* Homepage Cupcakes and Cookies Section  */
-@media (max-width: 1024px) { /* Tablet & Mobile View */
+@media (max-width: 980px) { /* Tablet & Mobile View */
     .grid-menu {
         display: flex;
         flex-direction: column;
@@ -91,7 +91,7 @@
 }
 
 /* Donate Section Tablet View */
-@media (max-width: 1024px) {
+@media (max-width: 980px) {
     .donate-section,
     .suicide-section {
         flex-direction: column;
@@ -127,7 +127,7 @@
 }
 
 /* Order Page Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 980px) {
     .order-page-box {
         flex-direction: column;
         align-items: center;
